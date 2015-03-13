@@ -1,5 +1,20 @@
 # csv2vcard
 
+I broke my _windows phone_ recently. Outlook contact book fm `live.com` allows me only to export contacts in `.csv` file. This small library helped me to convert them to `vcard`, so I was able to import them to my new _android_ device. Usage:
+
+```bash
+$ git clone git@github.com:michalbe/csv2vcard.git
+$ cd csv2vcard
+$ npm i
+```
+
+Then copy your `OutlookContacts.csv` file to `contacts.csv` and run
+```bash
+$ node index.js
+```
+Separate `vcard` file will be created in `output/` for every contact.
+
+
 ```javascript
 // Outlook CSV schema:
 
