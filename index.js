@@ -4,6 +4,7 @@ var fs = require('fs');
 
 var file = 'contacts.csv';
 var vcardContact;
+var path;
 
 fs.readFile(file, 'utf8', function(err, output) {
   parse(output, function(err, parsedCSV){
@@ -13,8 +14,9 @@ fs.readFile(file, 'utf8', function(err, output) {
         vcardContact.firstName = contact[1];
         vcardContact.lastName = contact[3];
         vcardContact.cellPhone = contact[37];
-        vcardContact.saveToFile('./output/' + contact[1].toLowerCase() + '-' + contact[3].toLowerCase() + '.vcf');
-
+        path = './output/' + contact[1].toLowerCase() + '-' + contact[3].toLowerCase() + '.vcf';
+        vcardContact.saveToFile(path);
+        console.log('File saved in ' + path);
       }
     });
   });
