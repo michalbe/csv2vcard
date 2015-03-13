@@ -16,6 +16,7 @@
     "url": "https://github.com/michalbe/csv2vcard/issues"
   },
   "dependencies": {
-    "csv-parse": "0.0.9"
+    "csv-parse": "0.0.9",
+    "vcards-js": "~1.0.0"
   }
 }
