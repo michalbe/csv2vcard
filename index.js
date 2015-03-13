@@ -9,6 +9,8 @@ var path;
 fs.readFile(file, 'utf8', function(err, output) {
   parse(output, function(err, parsedCSV){
     parsedCSV.forEach(function(contact) {
+      // positions from Outlook contacts schema in the README file of
+      // this project
       if (contact[1] && contact[3] && contact[37]) {
         vcardContact = vCard();
         vcardContact.firstName = contact[1];
