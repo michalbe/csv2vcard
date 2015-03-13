@@ -13,7 +13,8 @@ fs.readFile(file, 'utf8', function(err, output) {
         vcardContact.firstName = contact[1];
         vcardContact.lastName = contact[3];
         vcardContact.cellPhone = contact[37];
-        console.log(vcardContact.getFormattedString())
+        vcardContact.saveToFile('./output/' + contact[1].toLowerCase() + '-' + contact[3].toLowerCase() + '.vcf');
+
       }
     });
   });
