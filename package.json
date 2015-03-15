@@ -14,5 +14,8 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/michalbe/csv2vcard/issues"
+  },
+  "dependencies": {
+    "csv-parse": "0.0.9"
   }
 }
