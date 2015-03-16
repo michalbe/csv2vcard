@@ -14,7 +14,9 @@ fs.readFile(file, 'utf8', function(err, output) {
         vcardContact.firstName = contact[1];
         vcardContact.lastName = contact[3];
         vcardContact.cellPhone = contact[37];
-        path = './output/' + contact[1].toLowerCase().replace(/[\W]{1,}/ig, '-') + '-' + contact[3].toLowerCase().replace(/[\W]{1,}/ig, '-') + '.vcf';
+        path = './output/' +
+          contact[1].toLowerCase().replace(/[\W]{1,}/ig, '-') + '-' +
+          contact[3].toLowerCase().replace(/[\W]{1,}/ig, '-') + '.vcf';
         vcardContact.saveToFile(path);
         console.log('File saved in ' + path);
       }
