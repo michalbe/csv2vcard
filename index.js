@@ -1,4 +1,5 @@
 var parse = require('csv-parse');
+var vCard = require('vcards-js');
 var fs = require('fs');
 
 var file = 'contacts.csv';
