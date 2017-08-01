@@ -23,60 +23,65 @@ $ node index.js path/to/contacts.csv -o path/to/outputdir
 ```javascript
 // Outlook CSV schema:
 
-// 0 Title
-// 1 First Name
-// 2 Middle Name
-// 3 Last Name
+// 0 First Name
+// 1 Middle Name
+// 2 Last Name
+// 3 Title
 // 4 Suffix
-// 5 Given Name Yomi
-// 6 Family Name Yomi
-// 7 Home Street
-// 8 Home City
-// 9 Home State
-// 10 Home Postal Code
-// 11 Home Country
-// 12 Company
-// 13 Department
-// 14 Job Title
-// 15 Office Location
-// 16 Business Street
-// 17 Business City
-// 18 Business State
-// 19 Business Postal Code
-// 20 Business Country
-// 21 Other Street
-// 22 Other City
-// 23 Other State
-// 24 Other Postal Code
-// 25 Other Country
-// 26 Assistant's Phone
-// 27 Business Fax
-// 28 Business Phone
-// 29 Business Phone 2
-// 30 Callback
-// 31 Car Phone
-// 32 Company Main Phone
-// 33 Home Fax
-// 34 Home Phone
-// 35 Home Phone 2
-// 36 ISDN
-// 37 Mobile Phone
-// 38 Other Fax
-// 39 Other Phone
-// 40 Pager
-// 41 Primary Phone
-// 42 Radio Phone
-// 43 TTY/TDD Phone
-// 44 Telex
-// 45 Anniversary
-// 46 Birthday
-// 47 E-mail Address
-// 48 E-mail Type
-// 49 E-mail 2 Address
-// 50 E-mail 2 Type
-// 51 E-mail 3 Address
-// 52 E-mail 3 Type
-// 53 Notes
-// 54 Spouse
-// 55 Web Page
+// 5 Nickname
+// 6 Given Yomi
+// 7 Surname Yomi
+// 8 E-mail Address
+// 9 E-mail 2 Address
+// 10 E-mail 3 Address
+// 11 Home Phone
+// 12 Home Phone 2
+// 13 Business Phone
+// 14 Business Phone 2
+// 15 Mobile Phone
+// 16 Car Phone
+// 17 Other Phone
+// 18 Primary Phone
+// 19 Pager
+// 20 Business Fax
+// 21 Home Fax
+// 22 Other Fax
+// 23 Company Main Phone
+// 24 Callback
+// 25 Radio Phone
+// 26 Telex
+// 27 TTY/TDD Phone
+// 28 IMAddress
+// 29 Job Title
+// 30 Department
+// 31 Company
+// 32 Office Location
+// 33 Manager's Name
+// 34 Assistant's Name
+// 35 Assistant's Phone
+// 36 Company Yomi
+// 37 Business Street
+// 38 Business City
+// 39 Business State
+// 40 Business Postal Code
+// 41 Business Country/Region
+// 42 Home Street
+// 43 Home City
+// 44 Home State
+// 45 Home Postal Code
+// 46 Home Country/Region
+// 47 Other Street
+// 48 Other City
+// 49 Other State
+// 50 Other Postal Code
+// 51 Other Country/Region
+// 52 Personal Web Page
+// 53 Spouse
+// 54 Schools
+// 55 Hobby
+// 56 Location
+// 57 Web Page
+// 58 Birthday
+// 59 Anniversary
+// 60 Notes
 ```
