@@ -19,7 +19,7 @@ function getColumns(header, match) {
   return cols;
 }
 
-function getNumbers(entry, cols) {
+function getEntries(entry, cols) {
   var r = cols.map(i => entry[i]).filter(v => (v !== undefined && v !== ""));
   return r.length <= 1 ? r[0] : r;
 }
@@ -35,6 +35,7 @@ fs.mkdir(outputDir, function() {
       var homePhoneCols = getColumns(header, 'home phone');
       var workPhoneCols = getColumns(header, /(company.*|business|work|assistant.s) phone/);
       var otherPhoneCols = getColumns(header, 'other phone');
+      var emailCols = getColumns(header, /e.?mail .*address/);
 
       parsedCSV.forEach(function(contact) {
         // positions from Outlook contacts schema in the README file of
@@ -49,10 +50,11 @@ fs.mkdir(outputDir, function() {
           vcardContact.middleName = middleName;
           vcardContact.lastName = lastName;
 
-          vcardContact.cellPhone = getNumbers(contact, cellPhoneCols);
-          vcardContact.homePhoneCols = getNumbers(contact, homePhoneCols);
-          vcardContact.workPhone = getNumbers(contact, workPhoneCols);
-          vcardContact.otherPhone = getNumbers(contact, otherPhoneCols);
+          vcardContact.cellPhone = getEntries(contact, cellPhoneCols);
+          vcardContact.homePhoneCols = getEntries(contact, homePhoneCols);
+          vcardContact.workPhone = getEntries(contact, workPhoneCols);
+          vcardContact.otherPhone = getEntries(contact, otherPhoneCols);
+          vcardContact.email = getEntries(contact, emailCols);
 
           path = outputDir + '/';
           // join with space, trim extra space, replace whitespace with '-'
