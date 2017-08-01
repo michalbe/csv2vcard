@@ -14,6 +14,11 @@ $ node index.js
 ```
 Separate `vcard` file will be created in `output/` for every contact.
 
+The input file and output directory can be passed as command line arguments
+```bash
+$ node index.js path/to/contacts.csv -o path/to/outputdir
+```
+
 
 ```javascript
 // Outlook CSV schema:
