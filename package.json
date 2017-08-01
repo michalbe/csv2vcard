@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "csv-parse": "0.0.9",
+    "minimist": "^1.2.0",
     "vcards-js": "~1.0.0"
   }
 }
